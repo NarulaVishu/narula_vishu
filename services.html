@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narula_Vishu_Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-[#0D0D0D] text-[#00FF9F] font-sans overflow-x-hidden mx-auto max-w-screen-xl">
+    <header class="sticky top-0 z-50 bg-[#0D0D0D] shadow-lg">
+    <!-- Navbar -->
+    <nav class="bg-[#0D0D0D]">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 py-3">
+
+        <!-- Name with gradient text -->
+        <span class="text-2xl font-bold tracking-wide bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
+            SERVICES : Vishu Narula
+        </span>
+
+        <!-- Hamburger menu button with gradient icon -->
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center md:hidden ml-4">
+            <svg class="w-6 h-6 text-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text" fill="currentColor" viewBox="0 0 24 24" stroke="none">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+
+        <!-- Mobile menu -->
+        <div class="hidden w-full mt-4 md:flex md:items-center md:w-auto" id="navbar-default">
+            <ul class="flex flex-col md:flex-row md:space-x-6 w-full text-lg font-medium">
+            <li><a href="index.html" class="block py-2 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent hover:text-white">Home</a></li>
+    <li><a href="projects.html" class="block py-2 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent hover:text-white">Projects</a></li>
+
+            <li>
+                <!-- 9 dots button with gradient background & white icon -->
+                <button id="gridDropdownButton" data-dropdown-toggle="gridDropdown" 
+                class="p-2 rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white hover:brightness-110 transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 4h2v2H4V4zm5 0h2v2H9V4zm5 0h2v2h-2V4zM4 9h2v2H4V9zm5 0h2v2H9V9zm5 0h2v2h-2V9zM4 14h2v2H4v-2zm5 0h2v2H9v-2zm5 0h2v2h-2v-2z" />
+                </svg>
+                </button>
+                <!-- Dropdown for dots -->
+                 <div id="gridDropdown" class="z-50 hidden bg-[#1A1A1A] text-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-lg shadow-lg w-44">
+                <ul class="py-2 text-sm bg-none text-white">
+                    <li><a href="profile.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Profile</a></li>
+                    <li><a href="skills.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Skills</a></li>
+                    <li><a href="education.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Education</a></li>
+                    <li><a href="certification.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Certification</a></li>
+                </ul>
+                </div>
+            </li>
+
+            
+            <li>
+                <div class="relative">
+                <button id="profileDropdownButton" data-dropdown-toggle="profileDropdown" class="focus:outline-none">
+                    <!-- Gradient border around profile picture -->
+                    <img src="/images/vishu Photo.jpg" class="w-10 h-10 rounded-full border-2 border-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 p-[2px]" alt="Avatar" />
+                </button>
+
+                <!-- Profile dropdown -->
+                <div id="profileDropdown" class="hidden absolute right-4 top-full mt-2 w-[90vw] max-w-xs bg-[#1A1A1A] text-[#00FF9F] rounded-xl shadow-lg p-5 space-y-4 z-50 overflow-hidden">
+
+                    <p class="text-sm font-medium text-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">narula.vishu10@gmail.com</p>
+
+                    <div class="flex justify-center">
+                    <!-- Gradient border on larger profile pic -->
+                    <img src="/images/vishu Photo.jpg" class="w-24 h-24 rounded-full border-4 border-transparent  p-[2px]" alt="Profile" />
+                    </div>
+
+                    <a href="contact.html"><button class="w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-2 font-semibold rounded-lg hover:brightness-90 transition">
+                    Let's Connect
+                    </button></a>
+
+                    <div class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-opacity-20 p-4 rounded-lg text-white">
+                    <p class="text-sm font-semibold mb-2">🔗 Social Profiles</p>
+                    <a href="https://www.linkedin.com/in/vishu-narula-252871201" class="block hover:underline">LinkedIn</a>
+                    <a href="https://github.com/NarulaVishu" class="block hover:underline">GitHub</a>
+                    </div>
+                </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+
+        <section class="headings">
+
+            <ul class="flex flex-wrap text-sm font-medium text-center border-b border-gray-200 dark:border-gray-700">
+                <li class="me-2">
+    <a href="profile.html"
+       class="inline-block p-4 rounded-t-lg text-white hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white transition">
+       All
+    </a>
+  </li>
+  <li class="me-2">
+    <a href="services.html"
+       class="inline-block p-4 rounded-t-lg bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white font-semibold hover:brightness-110 transition">
+       Services
+    </a>
+  </li>
+  <li class="me-2">
+    <a href="projects.html"
+       class="inline-block p-4 rounded-t-lg text-white hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white transition">
+       Projects
+    </a>
+  </li>
+  <li class="me-2">
+    <a href="experience.html"
+       class="inline-block p-4 rounded-t-lg text-white hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white transition">
+       Experience
+    </a>
+  </li>
+  <li class="me-2">
+    <a href="certification.html"
+       class="inline-block p-4 rounded-t-lg text-white hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white transition">
+       Certifications
+    </a>
+  </li>
+            </ul>
+
+        </section>
+
+        <section class="services">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+      <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">What I offered</h2>
+          <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+      </div> 
+      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg h-60 w-40" src="https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg" alt="Web Development">
+              </a>
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <a href="#">Web Development</a>
+                  </h3>
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie drives the technical strategy of the flowbite platform and brand.</p>
+                  
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg h-60 w-40" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_T8FQnEG3N0d-RuXmxqvQZR1a9ai_rAajZg&sg" alt="Web design">
+              </a>
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <a href="#">Web design</a>
+                  </h3>
+                  
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Jese drives the technical strategy of the flowbite platform and brand.</p>
+                  
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg h-60 w-40" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_Data_Analysis.jpg" alt="Data Analytics">
+              </a>
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <a href="#">Data Analytics</a>
+                  </h3>
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Michael drives the technical strategy of the flowbite platform and brand.</p>
+                  
+              </div>
+          </div> 
+          <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg w-40 h-60" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRum3yNUESxFQElf6o-0NtTEVvBP-ONbewq5g&s" alt="UI UX Design">
+              </a>
+              <div class="p-5">
+                  <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <a href="#">UI UX Design</a>
+                  </h3>
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Lana drives the technical strategy of the flowbite platform and brand.</p>
+                  
+              </div>
+          </div>  
+      </div>  
+  </div>
+        </section>
+    </main>
+</body>
+</html>

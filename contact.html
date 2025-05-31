@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narula_Vishu_Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-[#0D0D0D] text-[#00FF9F] font-sans overflow-x-hidden mx-auto max-w-screen-xl">
+    <header class="sticky top-0 z-50 bg-[#0D0D0D] shadow-lg">
+    <!-- Navbar -->
+    <nav class="bg-[#0D0D0D]">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 py-3">
+
+        <!-- Name with gradient text -->
+        <span class="text-2xl font-bold tracking-wide bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
+            GET IN TOUCH : Vishu Narula
+        </span>
+
+        <!-- Hamburger menu button with gradient icon -->
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center md:hidden ml-4">
+            <svg class="w-6 h-6 text-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text" fill="currentColor" viewBox="0 0 24 24" stroke="none">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+
+        <!-- Mobile menu -->
+        <div class="hidden w-full mt-4 md:flex md:items-center md:w-auto" id="navbar-default">
+            <ul class="flex flex-col md:flex-row md:space-x-6 w-full text-lg font-medium">
+            <li><a href="index.html" class="block py-2 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent hover:text-white">Home</a></li>
+    <li><a href="projects.html" class="block py-2 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent hover:text-white">Projects</a></li>
+
+            <li>
+                <!-- 9 dots button with gradient background & white icon -->
+                <button id="gridDropdownButton" data-dropdown-toggle="gridDropdown" 
+                class="p-2 rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white hover:brightness-110 transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 4h2v2H4V4zm5 0h2v2H9V4zm5 0h2v2h-2V4zM4 9h2v2H4V9zm5 0h2v2H9V9zm5 0h2v2h-2V9zM4 14h2v2H4v-2zm5 0h2v2H9v-2zm5 0h2v2h-2v-2z" />
+                </svg>
+                </button>
+                <!-- Dropdown for dots -->
+                 <div id="gridDropdown" class="z-50 hidden bg-[#1A1A1A] text-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-lg shadow-lg w-44">
+                <ul class="py-2 text-sm bg-none text-white">
+                    <li><a href="profile.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Profile</a></li>
+                    <li><a href="skills.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Skills</a></li>
+                    <li><a href="education.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Education</a></li>
+                    <li><a href="certification.html" class="block px-4 py-2 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-red-500 hover:text-white rounded">Certification</a></li>
+                </ul>
+                </div>
+            </li>
+
+            
+            <li>
+                <div class="relative">
+                <button id="profileDropdownButton" data-dropdown-toggle="profileDropdown" class="focus:outline-none">
+                    <!-- Gradient border around profile picture -->
+                    <img src="/images/vishu Photo.jpg" class="w-10 h-10 rounded-full border-2 border-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 p-[2px]" alt="Avatar" />
+                </button>
+
+                <!-- Profile dropdown -->
+                <div id="profileDropdown" class="hidden absolute right-4 top-full mt-2 w-[90vw] max-w-xs bg-[#1A1A1A] text-[#00FF9F] rounded-xl shadow-lg p-5 space-y-4 z-50 overflow-hidden">
+
+                    <p class="text-sm font-medium text-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">narula.vishu10@gmail.com</p>
+
+                    <div class="flex justify-center">
+                    <!-- Gradient border on larger profile pic -->
+                    <img src="/images/vishu Photo.jpg" class="w-24 h-24 rounded-full border-4 border-transparent  p-[2px]" alt="Profile" />
+                    </div>
+
+                    <a href="contact.html"><button class="w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-2 font-semibold rounded-lg hover:brightness-90 transition">
+                    Let's Connect
+                    </button></a>
+
+                    <div class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-opacity-20 p-4 rounded-lg text-white">
+                    <p class="text-sm font-semibold mb-2">🔗 Social Profiles</p>
+                    <a href="https://www.linkedin.com/in/vishu-narula-252871201" class="block hover:underline">LinkedIn</a>
+                    <a href="https://github.com/NarulaVishu" class="block hover:underline">GitHub</a>
+                    </div>
+                </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+
+        
+
+       <section class=" py-16 px-6 lg:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    
+    <!-- Form Section -->
+    <div>
+      <h2 class="text-4xl font-extrabold text-white mb-4">Let’s Connect – I’ll Reply Soon</h2>
+      <p class="text-gray-600 mb-8">Feel free to reach out with your project ideas or inquiries. I’ll respond promptly to discuss how we can collaborate and achieve your goals effectively</p>
+
+      <form action="https://formsubmit.co/narula.vishu10@gmail.com" method="POST" class="space-y-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="first-name" class="block mb-2 text-sm font-medium text-white">First name</label>
+      <input type="text" id="first-name" name="First Name" required class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-purple-500 focus:border-purple-500 text-black" />
+    </div>
+    <div>
+      <label for="last-name" class="block mb-2 text-sm font-medium text-white">Last name</label>
+      <input type="text" id="last-name" name="Last Name" required class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-purple-500 focus:border-purple-500 text-black" />
+    </div>
+    <div>
+      <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+      <input type="email" id="email" name="Email" required class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-purple-500 focus:border-purple-500 text-black" />
+    </div>
+    <div>
+      <label for="Mobile" class="block mb-2 text-sm font-medium text-white">Phone Number</label>
+      <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-purple-500 focus:border-purple-500 text-black" />
+    </div>
+  </div>
+  <div>
+    <label for="message" class="block mb-2 text-sm font-medium text-white">Message</label>
+    <textarea id="message" name="Message" rows="4" class="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-purple-500 focus:border-purple-500 text-black" required placeholder="Leave a message..."></textarea>
+  </div>
+  <button type="submit" class="w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white font-semibold py-3 rounded-lg hover:opacity-90">Submit</button>
+  
+</form>
+
+    </div>
+
+    <!-- Testimonial Section -->
+<div class="flex flex-col items-start space-y-4">
+  <div class="flex items-center space-x-2">
+    <span class="text-3xl font-semibold text-purple-600">Narula</span>
+  </div>
+
+  <p class="text-gray-700 text-lg">
+    Vishu Narula is a talented UI/UX designer who brings a unique blend of creativity and technical expertise to every project. His attention to detail and user-centric approach make him a valuable asset to any team.
+    <br><br>
+    With 2+ years of experience in HTML, CSS, JavaScript, and UI tools, I bring ideas to life through responsive websites and intuitive designs. Whether it's a mobile-first feature, a full website, or a design prototype, I focus on functionality, aesthetics, and user experience.
+  </p>
+
+  <div class="flex items-center space-x-6 mt-4">
+    <!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/vishu-narula-252871201" target="_blank" title="LinkedIn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="w-10 h-10" />
+</a>
+
+<!-- GitHub -->
+<a href="https://github.com/NarulaVishu" target="_blank" title="GitHub">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="w-10 h-10" />
+</a>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/919588180874" target="_blank" title="WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-10 h-10" />
+</a>
+<!-- Gmail -->
+<a href="mailto:narula.vishu10@gmail.com" target="_blank" title="Email Vishu">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" class="w-10 h-10" />
+</a>
+
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+
+    </main>
+</body>
+</html>
